@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Wed, 19 Nov 2014 19:08:47 +0900
+Source: 3gpi-utils
+Binary: 3gpi-utils
+Architecture: source all
+Version: 0.2-2
+Distribution: unstable
+Urgency: medium
+Maintainer: Masahiro Honda <honda@mechatrax.com>
+Changed-By: Masahiro Honda <honda@mechatrax.com>
+Description:
+ 3gpi-utils - Utilities for 3GPI
+Changes:
+ 3gpi-utils (0.2-2) unstable; urgency=medium
+ .
+   * Fix 3gpi-utils.service
+Checksums-Sha1:
+ 0601708aa80029e9f4654fbb4c86b707dd79d4d0 566 3gpi-utils_0.2-2.dsc
+ 23f7aa562151721afc1470d3717eedec61b92686 36158 3gpi-utils_0.2-2.tar.gz
+ 578a45e914675bd859d1922e5cd1184e65c27028 4730 3gpi-utils_0.2-2_all.deb
+Checksums-Sha256:
+ 20cd5b333e054e54a7572b87a8ba867841b888b229cb955bccc2c1eb3b98e4c6 566 3gpi-utils_0.2-2.dsc
+ 5d7e77e90eb58d31366f8b8394fca44cdf2a34ca5b13808e56e1311a31561739 36158 3gpi-utils_0.2-2.tar.gz
+ a7af03a88ac83183f4301c49744cb5b36b299323e7e5597a5d65dbfbb84b0f82 4730 3gpi-utils_0.2-2_all.deb
+Files:
+ 07201099daca83865c4ccd6ab8b5e70d 566 unknown optional 3gpi-utils_0.2-2.dsc
+ e85fc4983478b1cd3327c0e54e257cca 36158 unknown optional 3gpi-utils_0.2-2.tar.gz
+ 2f4ec25bc167b8b18072aee3e51a96b0 4730 unknown optional 3gpi-utils_0.2-2_all.deb
