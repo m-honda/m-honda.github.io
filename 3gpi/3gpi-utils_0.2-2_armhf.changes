@@ -15,14 +15,14 @@ Changes:
  .
    * Fix 3gpi-utils.service
 Checksums-Sha1:
- 760327a219e9d692ba9d12becca7c7b7b96acc36 566 3gpi-utils_0.2-2.dsc
- ded9a5293c095b1edeee592e0c00c31df8813de3 36590 3gpi-utils_0.2-2.tar.gz
- 2a474d963595068e29cde9f23c15d26448a67ee6 4722 3gpi-utils_0.2-2_all.deb
+ cba74427d406591fd7fa25f17abc632cc9dcf56a 566 3gpi-utils_0.2-2.dsc
+ b51c330a934f5b2b862f6e997ec655f1f7ce1bb5 37007 3gpi-utils_0.2-2.tar.gz
+ a9b2c735eafaaa086a061e6eae013ec230655ece 4712 3gpi-utils_0.2-2_all.deb
 Checksums-Sha256:
- a0dea8f420126818b2c65c3a32123b17a9ef989fc8bfd4a01143054dc2a9f6cd 566 3gpi-utils_0.2-2.dsc
- a755dea945802255375066fc067ceb5dd99b18f06c05325b60dfdebc80aec2ba 36590 3gpi-utils_0.2-2.tar.gz
- d2b80ea00a78b9a6acc27eee624fb94a5991c6d2ac1150990e853b44ca5fccdf 4722 3gpi-utils_0.2-2_all.deb
+ 12dd7c6400e197f421537f2eb15082069ecc66c0f28be940ed90cf81041ef3b6 566 3gpi-utils_0.2-2.dsc
+ d09e801b440f04061efe3b5930314398d57ba58bbb0d91ac8e9ee3d2f756bfef 37007 3gpi-utils_0.2-2.tar.gz
+ 5d983ecc82ddf9ba7ed5038410f099a6c8b11fad86ac316a9b2130ffd796a080 4712 3gpi-utils_0.2-2_all.deb
 Files:
- 95a889d80a2ff4b57418f7aca07339ae 566 unknown optional 3gpi-utils_0.2-2.dsc
- a52339a5018b2c5665dca9ff7dfcd6b5 36590 unknown optional 3gpi-utils_0.2-2.tar.gz
- 7a67c8a479c54466e00af28c1e6105d7 4722 unknown optional 3gpi-utils_0.2-2_all.deb
+ df697b7ca64c848f889cae86bbc2b214 566 unknown optional 3gpi-utils_0.2-2.dsc
+ 82c5699c0cdaa29c784f5ed98dc84a63 37007 unknown optional 3gpi-utils_0.2-2.tar.gz
+ 069b818f7e3e87d7c7a644b471351efa 4712 unknown optional 3gpi-utils_0.2-2_all.deb
