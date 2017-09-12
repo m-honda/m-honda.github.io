@@ -1,18 +1,18 @@
 Package: 3gpi-network-manager
-Version: 1.0.2
+Version: 1.1.0
 Architecture: all
 Maintainer: Masahiro Honda <honda@mechatrax.com>
-Installed-Size: 20
+Installed-Size: 13
 Depends: systemd, network-manager (>= 1.6.2), modemmanager (>= 1.6.4), 3gpi-utils
 Conflicts: 3gpi-network-manager
 Homepage: https://www.mechatrax.com/
 Priority: optional
 Section: net
-Filename: pool/main/3/3gpi-network-manager/3gpi-network-manager_1.0.2_all.deb
-Size: 3400
-SHA256: f38c50e287e5238a8ffde7f0c53011e993cb775daa953162ee33f7579360ab2f
-SHA1: ec914b9d09ccaeba8d81ba2b5c312e373877e87d
-MD5sum: e323a2d601400eddc3c68f3da42028dd
+Filename: pool/main/3/3gpi-network-manager/3gpi-network-manager_1.1.0_all.deb
+Size: 2770
+SHA256: 8274a8900f9602cfb3e2f02f2a82c280841c34398b7743622636434f818cd4d2
+SHA1: 377c3974010586755245bfc2b77f04f0fe769f69
+MD5sum: 35a1dfc003a5db899ee0a91372ff4585
 Description: NetworkManager settings for 3GPi
  This package contains udev rules and APN settings for using 3GPi with
  NetworkManager.
