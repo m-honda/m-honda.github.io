@@ -1,0 +1,79 @@
+Package: 3gpi-network-manager
+Version: 1.0.2
+Architecture: all
+Maintainer: Masahiro Honda <honda@mechatrax.com>
+Installed-Size: 20
+Depends: systemd, network-manager (>= 1.6.2), modemmanager (>= 1.6.4), 3gpi-utils
+Conflicts: 3gpi-network-manager
+Homepage: https://www.mechatrax.com/
+Priority: optional
+Section: net
+Filename: pool/main/3/3gpi-network-manager/3gpi-network-manager_1.0.2_all.deb
+Size: 3400
+SHA256: f38c50e287e5238a8ffde7f0c53011e993cb775daa953162ee33f7579360ab2f
+SHA1: ec914b9d09ccaeba8d81ba2b5c312e373877e87d
+MD5sum: e323a2d601400eddc3c68f3da42028dd
+Description: NetworkManager settings for 3GPi
+ This package contains udev rules and APN settings for using 3GPi with
+ NetworkManager.
+
+Package: 3gpi-utils-1.0
+Source: 3gpi-utils
+Version: 1.0.3
+Architecture: all
+Maintainer: Masahiro Honda <honda@mechatrax.com>
+Installed-Size: 36
+Depends: systemd
+Breaks: 3gpi-utils (<< 1.0)
+Replaces: 3gpi-utils (<< 1.0)
+Provides: 3gpi-utils
+Homepage: https://www.mechatrax.com/
+Priority: optional
+Section: net
+Filename: pool/main/3/3gpi-utils/3gpi-utils-1.0_1.0.3_all.deb
+Size: 5508
+SHA256: c4052aa8958714b7d7fc3081e10cf3e2eee131ad02e40e1ec8b20a290a7a0edc
+SHA1: 756d10fa84454c52fa66d4e6577b25f825bb323f
+MD5sum: aa8d6aa25382d43bcf1241fe70a55e74
+Description: Utilities for 3GPi family
+ This package contains command utilities to control 3GPi family.
+
+Package: python-sleepi
+Version: 1.0.2
+Architecture: all
+Maintainer: Masahiro Honda <honda@mechatrax.com>
+Installed-Size: 27
+Depends: python:any (<< 2.8), python:any (>= 2.7.5-5~), python-smbus
+Homepage: https://www.mechatrax.com/
+Priority: optional
+Section: python
+Filename: pool/main/p/python-sleepi/python-sleepi_1.0.2_all.deb
+Size: 4036
+SHA256: a8a66ab07d838d5bd5d025e40f389d6248b313f2d8abfc2e574701be2fb12570
+SHA1: 828231779386e3bc6043a5c4d8fcc16f5b2b6e63
+MD5sum: 4974de5746527cecc1009bd89c3c2cd2
+Description: Python module for slee-Pi family.
+ This package contains python module to control slee-Pi family.
+ .
+ This package installs the library for Python 2.
+
+Package: python3-sleepi
+Source: python-sleepi
+Version: 1.0.2
+Architecture: all
+Maintainer: Masahiro Honda <honda@mechatrax.com>
+Installed-Size: 27
+Depends: python3:any (>= 3.4~), python3-smbus
+Homepage: https://www.mechatrax.com/
+Priority: optional
+Section: python
+Filename: pool/main/p/python-sleepi/python3-sleepi_1.0.2_all.deb
+Size: 4130
+SHA256: 7457f164acbe2596a68fdc306f8b10582fab1955f6426916cfd234aaecc78d6d
+SHA1: cf9973ebec70734d2c7d26d1d8a5f00a281f4dd3
+MD5sum: 37a514f66638e1fc41bf17809ee9bc5f
+Description: Python 3 module for slee-Pi family.
+ This package contains python module to control slee-Pi family.
+ .
+ This package installs the library for Python 3.
+
