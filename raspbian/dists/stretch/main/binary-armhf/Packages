@@ -1,18 +1,18 @@
 Package: 3gpi-network-manager
-Version: 1.1.0
+Version: 1.1.1
 Architecture: all
 Maintainer: Masahiro Honda <honda@mechatrax.com>
-Installed-Size: 13
+Installed-Size: 19
 Depends: systemd, network-manager (>= 1.6.2), modemmanager (>= 1.6.4), 3gpi-utils
 Conflicts: 3gpi-network-manager
 Homepage: https://www.mechatrax.com/
 Priority: optional
 Section: net
-Filename: pool/main/3/3gpi-network-manager/3gpi-network-manager_1.1.0_all.deb
-Size: 2770
-SHA256: 8274a8900f9602cfb3e2f02f2a82c280841c34398b7743622636434f818cd4d2
-SHA1: 377c3974010586755245bfc2b77f04f0fe769f69
-MD5sum: 35a1dfc003a5db899ee0a91372ff4585
+Filename: pool/main/3/3gpi-network-manager/3gpi-network-manager_1.1.1_all.deb
+Size: 3016
+SHA256: 7340d76314a474667da20904a304c5bdf4df304e293238809f35e5e5b08724bb
+SHA1: a8a182a5f6048cc773a636e5fceb665af8a67c85
+MD5sum: 341d9fde1feec60cb204aa87f8348c45
 Description: NetworkManager settings for 3GPi
  This package contains udev rules and APN settings for using 3GPi with
  NetworkManager.
@@ -22,7 +22,7 @@ Source: 3gpi-utils
 Version: 1.0.3
 Architecture: all
 Maintainer: Masahiro Honda <honda@mechatrax.com>
-Installed-Size: 36
+Installed-Size: 35
 Depends: systemd
 Breaks: 3gpi-utils (<< 1.0)
 Replaces: 3gpi-utils (<< 1.0)
@@ -31,10 +31,10 @@ Homepage: https://www.mechatrax.com/
 Priority: optional
 Section: net
 Filename: pool/main/3/3gpi-utils/3gpi-utils-1.0_1.0.3_all.deb
-Size: 5508
-SHA256: c4052aa8958714b7d7fc3081e10cf3e2eee131ad02e40e1ec8b20a290a7a0edc
-SHA1: 756d10fa84454c52fa66d4e6577b25f825bb323f
-MD5sum: aa8d6aa25382d43bcf1241fe70a55e74
+Size: 5532
+SHA256: 74f972ad32d5bcd0334cc6d33f88792700b6a995c73fcf4e3d101e52e7d30c0d
+SHA1: dea60f482206ead69fb849b53644868abac6aade
+MD5sum: 933d5ba177aca61f98affa1e951d5916
 Description: Utilities for 3GPi family
  This package contains command utilities to control 3GPi family.
 

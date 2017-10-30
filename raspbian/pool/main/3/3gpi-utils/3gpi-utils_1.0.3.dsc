@@ -12,8 +12,8 @@ Build-Depends: debhelper (>= 9), dh-systemd
 Package-List:
  3gpi-utils-1.0 deb net optional arch=all
 Checksums-Sha1:
- b38052ab5fbfb4b96750f4a48117f47239358831 5820 3gpi-utils_1.0.3.tar.xz
+ af8703f44b6b2f086d9c0fd23f9e53fe1fa8e675 5840 3gpi-utils_1.0.3.tar.xz
 Checksums-Sha256:
- bcadbfb9828a8f019c0c9d90d657360a7ab2abd4e7ba99e7d27a3ba3444b8ee7 5820 3gpi-utils_1.0.3.tar.xz
+ 1d142ce672ee7314ebdb5445694119063b1794dac095a1bbc489c5ef44654df6 5840 3gpi-utils_1.0.3.tar.xz
 Files:
- 9b45621f5ced928dcec0a5a6ea74b393 5820 3gpi-utils_1.0.3.tar.xz
+ 472f97688e5a5287432d8a4b115593ec 5840 3gpi-utils_1.0.3.tar.xz
