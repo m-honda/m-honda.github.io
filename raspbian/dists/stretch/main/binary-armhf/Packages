@@ -17,27 +17,6 @@ Description: NetworkManager settings for 3GPi
  This package contains udev rules and APN settings for using 3GPi with
  NetworkManager.
 
-Package: 3gpi-utils-1.0
-Source: 3gpi-utils
-Version: 1.0.3
-Architecture: all
-Maintainer: Masahiro Honda <honda@mechatrax.com>
-Installed-Size: 35
-Depends: systemd
-Breaks: 3gpi-utils (<< 1.0)
-Replaces: 3gpi-utils (<< 1.0)
-Provides: 3gpi-utils
-Homepage: https://www.mechatrax.com/
-Priority: optional
-Section: net
-Filename: pool/main/3/3gpi-utils/3gpi-utils-1.0_1.0.3_all.deb
-Size: 5532
-SHA256: 74f972ad32d5bcd0334cc6d33f88792700b6a995c73fcf4e3d101e52e7d30c0d
-SHA1: dea60f482206ead69fb849b53644868abac6aade
-MD5sum: 933d5ba177aca61f98affa1e951d5916
-Description: Utilities for 3GPi family
- This package contains command utilities to control 3GPi family.
-
 Package: python-sleepi
 Version: 1.0.2
 Architecture: all
@@ -76,6 +55,48 @@ Description: Python 3 module for slee-Pi family.
  This package contains python module to control slee-Pi family.
  .
  This package installs the library for Python 3.
+
+Package: raspberrypi-kernel-headers-mtx
+Source: raspberrypi-firmware-mtx
+Version: 1.20171029-1~mtx1
+Architecture: armhf
+Maintainer: Masahiro Honda <honda@mechatrax.com>
+Installed-Size: 96639
+Breaks: raspberrypi-kernel-headers
+Replaces: raspberrypi-kernel-headers
+Provides: linux-headers, raspberrypi-kernel-headers
+Homepage: https://github.com/raspberrypi/firmware
+Priority: extra
+Section: kernel
+Filename: pool/main/r/raspberrypi-firmware-mtx/raspberrypi-kernel-headers-mtx_1.20171029-1~mtx1_armhf.deb
+Size: 15333298
+SHA256: e42c2b584e8216a33df548dc226d7e0afe5251864cc5ba79180421cfc419546c
+SHA1: a33c7f3ecdef24fe9694a6585805c3d40f85950f
+MD5sum: 02eb066bc9938f715b42da23af25e006
+Description: Header files for the Raspberry Pi Linux kernel
+ This package provides the architecture-specific kernel header files for
+ the Raspberry Pi Linux kernel, generally used for building out-of-tree
+ kernel modules.
+
+Package: raspberrypi-kernel-mtx
+Source: raspberrypi-firmware-mtx
+Version: 1.20171029-1~mtx1
+Architecture: armhf
+Maintainer: Masahiro Honda <honda@mechatrax.com>
+Installed-Size: 111676
+Breaks: raspberrypi-bootloader (<< 1.20160324-1), raspberrypi-kernel
+Replaces: raspberrypi-bootloader (<< 1.20160324-1), raspberrypi-kernel
+Provides: linux-image, raspberrypi-kernel
+Homepage: https://github.com/raspberrypi/firmware
+Priority: extra
+Section: kernel
+Filename: pool/main/r/raspberrypi-firmware-mtx/raspberrypi-kernel-mtx_1.20171029-1~mtx1_armhf.deb
+Size: 31686498
+SHA256: b8818a4a1e2445b921f5358aadec34830581dfd9c9ac2ad31910e29cdf82b4d2
+SHA1: e6b54397ac68e90bd21aaf5d21bb5fa2da4169b6
+MD5sum: 47e6fc3345efde4fed3509417f6a85f9
+Description: Raspberry Pi bootloader
+ This package contains the Raspberry Pi Linux kernel.
 
 Package: soracom-cli
 Maintainer: Masahiro Honda <honda@mechatrax.com>
