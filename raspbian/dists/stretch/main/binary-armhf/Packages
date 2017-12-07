@@ -17,6 +17,43 @@ Description: NetworkManager settings for 3GPi
  This package contains udev rules and APN settings for using 3GPi with
  NetworkManager.
 
+Package: 3gpi-utils
+Version: 2.0.0
+Architecture: all
+Maintainer: Masahiro Honda <honda@mechatrax.com>
+Installed-Size: 46
+Depends: pppconfig
+Breaks: 3gpi-utils-1.0 (<< 2.0.0)
+Replaces: 3gpi-utils-1.0 (<< 2.0.0)
+Homepage: https://www.mechatrax.com/
+Priority: optional
+Section: net
+Filename: pool/main/3/3gpi-utils/3gpi-utils_2.0.0_all.deb
+Size: 6492
+SHA256: 3371887320a815e3e38ae6499a94185ba11ecfd9d90dabe06204aed8c18ad959
+SHA1: d3fe3e671e6692a986eb460bbd714681b16802a1
+MD5sum: cb096b628b4483d44e67fecadfaf34c5
+Description: Utilities for 3GPi family
+ This package contains command line utilities to control 3GPi family.
+
+Package: 3gpi-utils-1.0
+Source: 3gpi-utils
+Version: 2.0.0
+Architecture: all
+Maintainer: Masahiro Honda <honda@mechatrax.com>
+Installed-Size: 9
+Depends: 3gpi-utils (= 2.0.0)
+Homepage: https://www.mechatrax.com/
+Priority: optional
+Section: net
+Filename: pool/main/3/3gpi-utils/3gpi-utils-1.0_2.0.0_all.deb
+Size: 2506
+SHA256: 5bfa29b53c9bd4cf4ec84e2d468ad78276f4831fbf1a9e312752e058852a9456
+SHA1: e65280988776b0a72ba391873f9b487d8a5798a6
+MD5sum: ba2429b1667005e362b1d714ce3a8bc4
+Description: Utilities for 3GPi family
+ Dummy package for upgrade.
+
 Package: python-sleepi
 Version: 1.0.2
 Architecture: all
