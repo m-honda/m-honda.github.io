@@ -8,10 +8,10 @@ Homepage: https://mechatrax.com/
 Priority: optional
 Section: misc
 Filename: pool/non-free/a/adpi-firmware/adpi-firmware_1.0.0_armhf.deb
-Size: 3474
-SHA256: ac97c1de81173d63b86beeb687a5b93d04cc0fbae895e42e8483ae07173caa8d
-SHA1: c9a95c30673df1e3dec5786702b056c891a497d1
-MD5sum: b691245a1d55255a48cabd70fa060a47
+Size: 3482
+SHA256: 5bd6e6ed64bbdd36de19702cfab8b0f079e67e3012c6cee4d871ca05609527ba
+SHA1: 304aa76add3e256eec18fa4e25b04b1c845b09b4
+MD5sum: 2254b79f28de4eb627359e22e58630ac
 Description: Device tree overlay binary for ADPi
  This package contains the device tree overlay binary for ADPi.
 

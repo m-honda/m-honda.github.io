@@ -21,7 +21,7 @@ Package: 3gpi-utils
 Version: 2.0.0
 Architecture: all
 Maintainer: Masahiro Honda <honda@mechatrax.com>
-Installed-Size: 46
+Installed-Size: 49
 Depends: pppconfig
 Breaks: 3gpi-utils-1.0 (<< 2.0.0)
 Replaces: 3gpi-utils-1.0 (<< 2.0.0)
@@ -29,10 +29,10 @@ Homepage: https://www.mechatrax.com/
 Priority: optional
 Section: net
 Filename: pool/main/3/3gpi-utils/3gpi-utils_2.0.0_all.deb
-Size: 6492
-SHA256: 3371887320a815e3e38ae6499a94185ba11ecfd9d90dabe06204aed8c18ad959
-SHA1: d3fe3e671e6692a986eb460bbd714681b16802a1
-MD5sum: cb096b628b4483d44e67fecadfaf34c5
+Size: 6826
+SHA256: fd0a4a2900db9437f042ad99c0aad5457af2ece48ec9b21aa31e3a837bdf9479
+SHA1: af31df315d1c184788aacb32a7a17d79805649f6
+MD5sum: 6a36a47b09a7606fe994c10d70adfae2
 Description: Utilities for 3GPi family
  This package contains command line utilities to control 3GPi family.
 
@@ -47,10 +47,10 @@ Homepage: https://www.mechatrax.com/
 Priority: optional
 Section: net
 Filename: pool/main/3/3gpi-utils/3gpi-utils-1.0_2.0.0_all.deb
-Size: 2506
-SHA256: 5bfa29b53c9bd4cf4ec84e2d468ad78276f4831fbf1a9e312752e058852a9456
-SHA1: e65280988776b0a72ba391873f9b487d8a5798a6
-MD5sum: ba2429b1667005e362b1d714ce3a8bc4
+Size: 2526
+SHA256: 86c25f3800b2f7dfd54c2a5801ba6f280edb219171f078e6c3f0fb128aa6b0b0
+SHA1: 88bc2123ef80252f83c2b8cfb5ea7e0b87d7e343
+MD5sum: 9dc46ba43ab71db5edf9a64648e0814e
 Description: Utilities for 3GPi family
  Dummy package for upgrade.
 

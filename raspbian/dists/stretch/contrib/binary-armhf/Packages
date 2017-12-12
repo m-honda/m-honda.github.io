@@ -8,10 +8,10 @@ Homepage: https://mechatrax.com/
 Priority: optional
 Section: misc
 Filename: pool/contrib/a/adpi-utils/adpi-utils_1.0.0_all.deb
-Size: 4758
-SHA256: af1fe7511e1d9fbbf1ac25738b2a9ea301785b8a11fed876cda188504a400232
-SHA1: a338c5e48dbf49deaf095e661dd196a40b8a51a7
-MD5sum: 842e8ca3dc52c6e28a4efdd123f05f43
+Size: 4746
+SHA256: 541cca6be60431d8d3118fa120de4636f845f71d6737dea7ca4caa5cbae7df24
+SHA1: c5e2a968285fc7dedf31a93df87ddf757fdd1fa2
+MD5sum: fadd653e25e7fa7f55f6ef4bf2d762a6
 Description: Utilities for ADPi
  This package contains command utilities to control ADPi.
 

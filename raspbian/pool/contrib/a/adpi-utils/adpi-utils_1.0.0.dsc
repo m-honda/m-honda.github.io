@@ -12,8 +12,8 @@ Build-Depends: debhelper (>= 10)
 Package-List:
  adpi-utils deb misc optional arch=all
 Checksums-Sha1:
- c7d56b23ce547bd5a415c0dee7933948cfc4ed71 4164 adpi-utils_1.0.0.tar.xz
+ a220fb1efbdef3ea618d2d7c7620a5569b4d8ec3 4148 adpi-utils_1.0.0.tar.xz
 Checksums-Sha256:
- b58be701c5007dce67617e61cca2b31910ff743207506db1cc70675905f07a03 4164 adpi-utils_1.0.0.tar.xz
+ 8ee9661f96fb1d406e7613b1d4a51f14a76cd13f6dfec0e85066cbd890723a9f 4148 adpi-utils_1.0.0.tar.xz
 Files:
- 8bdf81d0c4f655d153d4e956f91050a4 4164 adpi-utils_1.0.0.tar.xz
+ 730dc25a06e3d631fe2d67efe6e9da74 4148 adpi-utils_1.0.0.tar.xz
