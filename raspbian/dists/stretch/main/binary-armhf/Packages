@@ -1,151 +1,37 @@
-Package: 3gpi-network-manager
-Version: 1.2.1
-Architecture: all
-Maintainer: Masahiro Honda <honda@mechatrax.com>
-Installed-Size: 21
-Depends: systemd, network-manager (>= 1.6.2), modemmanager (>= 1.6.4), 3gpi-utils
-Conflicts: 3gpi-network-manager
-Homepage: https://www.mechatrax.com/
-Priority: optional
-Section: net
-Filename: pool/main/3/3gpi-network-manager/3gpi-network-manager_1.2.1_all.deb
-Size: 3162
-SHA256: 995fe61f47957a848e1412a777950ba7d4d51a00d28af20504c4631aaee2bafd
-SHA1: ce32b12c7dd7ae75998346a53a3b1e56075b70ef
-MD5sum: 60b59b68fd6a2e5de322b3aea4133b2a
-Description: NetworkManager settings for 3GPi
- This package contains udev rules and APN settings for using 3GPi with
- NetworkManager.
-
 Package: 3gpi-utils
-Version: 2.0.0
+Version: 2.0.1
 Architecture: all
 Maintainer: Masahiro Honda <honda@mechatrax.com>
 Installed-Size: 49
-Depends: pppconfig
+Depends: ppp
 Breaks: 3gpi-utils-1.0 (<< 2.0.0)
 Replaces: 3gpi-utils-1.0 (<< 2.0.0)
 Homepage: https://www.mechatrax.com/
 Priority: optional
 Section: net
-Filename: pool/main/3/3gpi-utils/3gpi-utils_2.0.0_all.deb
-Size: 6826
-SHA256: fd0a4a2900db9437f042ad99c0aad5457af2ece48ec9b21aa31e3a837bdf9479
-SHA1: af31df315d1c184788aacb32a7a17d79805649f6
-MD5sum: 6a36a47b09a7606fe994c10d70adfae2
+Filename: pool/main/3/3gpi-utils/3gpi-utils_2.0.1_all.deb
+Size: 6850
+SHA256: e7a054344cadf9b93f9f01c370ec37212c095acfa506c1a5584da14f00bf7f73
+SHA1: 432b94f63b7508b5c5bf1b07cc698ecac8b9c3a2
+MD5sum: 5b2d6582f3782ffc81800c669fd8b408
 Description: Utilities for 3GPi family
  This package contains command line utilities to control 3GPi family.
 
 Package: 3gpi-utils-1.0
 Source: 3gpi-utils
-Version: 2.0.0
+Version: 2.0.1
 Architecture: all
 Maintainer: Masahiro Honda <honda@mechatrax.com>
 Installed-Size: 9
-Depends: 3gpi-utils (= 2.0.0)
+Depends: 3gpi-utils (= 2.0.1)
 Homepage: https://www.mechatrax.com/
 Priority: optional
 Section: net
-Filename: pool/main/3/3gpi-utils/3gpi-utils-1.0_2.0.0_all.deb
-Size: 2526
-SHA256: 86c25f3800b2f7dfd54c2a5801ba6f280edb219171f078e6c3f0fb128aa6b0b0
-SHA1: 88bc2123ef80252f83c2b8cfb5ea7e0b87d7e343
-MD5sum: 9dc46ba43ab71db5edf9a64648e0814e
+Filename: pool/main/3/3gpi-utils/3gpi-utils-1.0_2.0.1_all.deb
+Size: 2554
+SHA256: 958317f6333a8a130bb363b20acb8dee8ce88a7424465fcc1ba64d934bc0742c
+SHA1: a8bfa19c554d886efb70d0c6140a04073fc1696b
+MD5sum: db08d7c72fb1d385c4e6832e9b196a04
 Description: Utilities for 3GPi family
  Dummy package for upgrade.
-
-Package: python-sleepi
-Version: 1.0.2
-Architecture: all
-Maintainer: Masahiro Honda <honda@mechatrax.com>
-Installed-Size: 27
-Depends: python:any (<< 2.8), python:any (>= 2.7.5-5~), python-smbus
-Homepage: https://www.mechatrax.com/
-Priority: optional
-Section: python
-Filename: pool/main/p/python-sleepi/python-sleepi_1.0.2_all.deb
-Size: 4036
-SHA256: a8a66ab07d838d5bd5d025e40f389d6248b313f2d8abfc2e574701be2fb12570
-SHA1: 828231779386e3bc6043a5c4d8fcc16f5b2b6e63
-MD5sum: 4974de5746527cecc1009bd89c3c2cd2
-Description: Python module for slee-Pi family.
- This package contains python module to control slee-Pi family.
- .
- This package installs the library for Python 2.
-
-Package: python3-sleepi
-Source: python-sleepi
-Version: 1.0.2
-Architecture: all
-Maintainer: Masahiro Honda <honda@mechatrax.com>
-Installed-Size: 27
-Depends: python3:any (>= 3.4~), python3-smbus
-Homepage: https://www.mechatrax.com/
-Priority: optional
-Section: python
-Filename: pool/main/p/python-sleepi/python3-sleepi_1.0.2_all.deb
-Size: 4130
-SHA256: 7457f164acbe2596a68fdc306f8b10582fab1955f6426916cfd234aaecc78d6d
-SHA1: cf9973ebec70734d2c7d26d1d8a5f00a281f4dd3
-MD5sum: 37a514f66638e1fc41bf17809ee9bc5f
-Description: Python 3 module for slee-Pi family.
- This package contains python module to control slee-Pi family.
- .
- This package installs the library for Python 3.
-
-Package: raspberrypi-kernel-headers-mtx
-Source: raspberrypi-firmware-mtx
-Version: 1.20171029-1~mtx1
-Architecture: armhf
-Maintainer: Masahiro Honda <honda@mechatrax.com>
-Installed-Size: 96639
-Breaks: raspberrypi-kernel-headers
-Replaces: raspberrypi-kernel-headers
-Provides: linux-headers, raspberrypi-kernel-headers
-Homepage: https://github.com/raspberrypi/firmware
-Priority: extra
-Section: kernel
-Filename: pool/main/r/raspberrypi-firmware-mtx/raspberrypi-kernel-headers-mtx_1.20171029-1~mtx1_armhf.deb
-Size: 15333298
-SHA256: e42c2b584e8216a33df548dc226d7e0afe5251864cc5ba79180421cfc419546c
-SHA1: a33c7f3ecdef24fe9694a6585805c3d40f85950f
-MD5sum: 02eb066bc9938f715b42da23af25e006
-Description: Header files for the Raspberry Pi Linux kernel
- This package provides the architecture-specific kernel header files for
- the Raspberry Pi Linux kernel, generally used for building out-of-tree
- kernel modules.
-
-Package: raspberrypi-kernel-mtx
-Source: raspberrypi-firmware-mtx
-Version: 1.20171029-1~mtx1
-Architecture: armhf
-Maintainer: Masahiro Honda <honda@mechatrax.com>
-Installed-Size: 111676
-Breaks: raspberrypi-bootloader (<< 1.20160324-1), raspberrypi-kernel
-Replaces: raspberrypi-bootloader (<< 1.20160324-1), raspberrypi-kernel
-Provides: linux-image, raspberrypi-kernel
-Homepage: https://github.com/raspberrypi/firmware
-Priority: extra
-Section: kernel
-Filename: pool/main/r/raspberrypi-firmware-mtx/raspberrypi-kernel-mtx_1.20171029-1~mtx1_armhf.deb
-Size: 31686498
-SHA256: b8818a4a1e2445b921f5358aadec34830581dfd9c9ac2ad31910e29cdf82b4d2
-SHA1: e6b54397ac68e90bd21aaf5d21bb5fa2da4169b6
-MD5sum: 47e6fc3345efde4fed3509417f6a85f9
-Description: Raspberry Pi bootloader
- This package contains the Raspberry Pi Linux kernel.
-
-Package: soracom-cli
-Maintainer: Masahiro Honda <honda@mechatrax.com>
-Version: 0.2.5-2
-Architecture: armhf
-Priority: extra
-Section: net
-Filename: pool/main/s/soracom-cli/soracom-cli_0.2.5-2_armhf.deb
-Size: 3183218
-SHA256: 4cdd0ced73fec9cf1f12cb05ccaab6e25253e9c75f1ba227861dac37947b11d8
-SHA1: a642047812f20933f0d78a760015c4da5af1f569
-MD5sum: efc90f1dceaebd4ce7ba55681f4bfd7b
-Description: A command line tool soracom to invoke SORACOM API
-Installed-Size: 2
 
