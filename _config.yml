@@ -1,0 +1,8 @@
+title: M-honda.GitHub.io
+description: リポジトリ公開のテスト用です。
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-minimal
+
+gems:
+  - jekyll-mentions
