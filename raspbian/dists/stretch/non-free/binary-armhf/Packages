@@ -1,5 +1,5 @@
 Package: adpi-firmware
-Version: 1.1.0
+Version: 1.2.0
 Architecture: armhf
 Maintainer: Masahiro Honda <honda@mechatrax.com>
 Installed-Size: 22
@@ -7,11 +7,11 @@ Depends: raspberrypi-kernel-mtx (>= 1.20180327-1~mtx1)
 Homepage: https://mechatrax.com/
 Priority: optional
 Section: misc
-Filename: pool/non-free/a/adpi-firmware/adpi-firmware_1.1.0_armhf.deb
-Size: 3622
-SHA256: d01c1fb4e362f55719bfea9b53f3d3fdb4d1d5100dddb06451d6d2caed026b5d
-SHA1: 371bb314f8b8d882b2738f27f56dcc7364838ddc
-MD5sum: c2b297a0683e17cc654e9ff46c163433
+Filename: pool/non-free/a/adpi-firmware/adpi-firmware_1.2.0_armhf.deb
+Size: 3688
+SHA256: fd12befb2e660d918a35a0503ce99b363c1da16045c3adf45a36c82c5b83ca0e
+SHA1: 278fc743184f8be0e443845896acf9397a917a8f
+MD5sum: e7b5de29b7b445d53dffd41c0d0508c2
 Description: Device tree overlay binary for ADPi
  This package contains the device tree overlay binary for ADPi.
 
@@ -44,10 +44,10 @@ Homepage: https://www.mechatrax.com/
 Priority: optional
 Section: misc
 Filename: pool/non-free/s/sleepi2-firmware/sleepi2-firmware_1.1.3_armhf.deb
-Size: 3566
-SHA256: d674985cd4a13b2ce0de12be1d0e4ff161db771cc09fab8e4413e776e8f03084
-SHA1: 95cdc6bf8d4fc16810c1ebfa76d7262607c40fee
-MD5sum: 839b1a9ef553b54d554a7b45c84d1a20
+Size: 3558
+SHA256: 0d72955b7b1a9474d9123b59d1d68450e93983643df80774acadeaf914b5c113
+SHA1: 9ec0cb99cb4edeced5ee87ed745071e1ff661e50
+MD5sum: 97f48502fc36136345fe63372115f163
 Description: Device tree overlay binary for slee-Pi 2
  This package contains the device tree overlay binary for slee-Pi 2.
 

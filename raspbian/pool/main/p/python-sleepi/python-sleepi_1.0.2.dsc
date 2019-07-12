@@ -1,3 +1,6 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
 Format: 3.0 (native)
 Source: python-sleepi
 Binary: python-sleepi, python3-sleepi
@@ -13,8 +16,20 @@ Package-List:
  python-sleepi deb python optional arch=all
  python3-sleepi deb python optional arch=all
 Checksums-Sha1:
- d4393e7e1d4e9cf0feec6b03646139584535c4ea 3736 python-sleepi_1.0.2.tar.xz
+ f19b236dac0b8f3442b85b9d165001719e343242 3360 python-sleepi_1.0.2.tar.xz
 Checksums-Sha256:
- e530359d9e8fcf79f84a2c0614a75d5862c60c71fa1b8e7897887e3e2456fe0f 3736 python-sleepi_1.0.2.tar.xz
+ 581e2888ccda6bb281496de1cf904dd04eb5789a37bbfa16673861159dc32c37 3360 python-sleepi_1.0.2.tar.xz
 Files:
- d08752416729463eadd9b054e463f834 3736 python-sleepi_1.0.2.tar.xz
+ 3c1b2307d53d8ca3a549795edcf67799 3360 python-sleepi_1.0.2.tar.xz
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFIBAEBCgAyFiEE81j0+exzGNM8AStlzt4RkpzTZaIFAln4EHgUHGhvbmRhQG1l
+Y2hhdHJheC5jb20ACgkQzt4RkpzTZaIOHQf/eF5mb4KtRKFr3KM49nrgyER8ddEg
+N/PqncQx6FKsgyPZrlqjNVrSibOmOBByEjX3PJOe7Zx19KOZxDQFNRU0URQsEr/a
+9XCl1omQk8n+xYBPREt8hmyGVvDJcY+YQQgMn9G5QGqraH5TG2ZcBy2rz++/xcw5
+O2ju3+4LhzdoSviamGVViphneBDAwzlpmRPv0Xxsd2y5OHkX4Q3lXiBn5HypMHXT
+MiTXK9da0PUhSSSRx68amdamM0CYvRBLCyv5pVCyAWBpJRT2QUbUTfCHA2/upoKB
+aAkBP5Junu3OBjZRR+4jpeQm7Xuwb5Hif1d1USq5ujl0q3g01z+IJxRrag==
+=2dXE
+-----END PGP SIGNATURE-----

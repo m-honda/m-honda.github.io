@@ -1,22 +1,42 @@
 Package: adpi-utils
-Version: 1.1.0
+Version: 2.0.0
 Architecture: all
 Maintainer: Masahiro Honda <honda@mechatrax.com>
-Installed-Size: 35
-Depends: bc, adpi-firmware, raspberrypi-kernel-mtx
+Installed-Size: 25
+Depends: adpi-utils-backend-spidev | adpi-utils-backend
 Homepage: https://mechatrax.com/
 Priority: optional
 Section: misc
-Filename: pool/contrib/a/adpi-utils/adpi-utils_1.1.0_all.deb
-Size: 5618
-SHA256: 0d446eccea710d68c979a70ae7c3d6f8fb8384a6da8b0be940a3312cb9176b4c
-SHA1: 4c6b7045720b8a79540dab92df4920c4e3807a96
-MD5sum: 292178e843aedf23ce5f8e643f999441
+Filename: pool/contrib/a/adpi-utils/adpi-utils_2.0.0_all.deb
+Size: 4458
+SHA256: d5d6e5ac04d5840c0d45d1d2e13a6f07d3a83159dc64bb233ee36f8333df55ca
+SHA1: ef32bb7087d046982a902d48c6aee5e31a3a88bb
+MD5sum: 6abef4d74f5b8a351aec8520f818880f
 Description: Utilities for ADPi
  This package contains command utilities to control ADPi.
 
+Package: adpi-utils-backend-iio
+Version: 1.0.0
+Architecture: all
+Maintainer: Masahiro Honda <honda@mechatrax.com>
+Installed-Size: 28
+Depends: bc, adpi-firmware, raspberrypi-kernel-mtx
+Conflicts: adpi-utils-backend
+Replaces: adpi-utils-backend
+Provides: adpi-utils-backend
+Homepage: https://mechatrax.com/
+Priority: optional
+Section: misc
+Filename: pool/contrib/a/adpi-utils-backend-iio/adpi-utils-backend-iio_1.0.0_all.deb
+Size: 4428
+SHA256: 1dc911ce1da1945172f633e02ffc41eb1700f8f63a3fd0fc4d1920600d519397
+SHA1: fe2e7c03c75e0c8df2bd038f70766a54ae2e3843
+MD5sum: 6f699e2d3c8dacd3c84c5818ae79dde5
+Description: Backend of adpi-utils to control ADPi with IIO
+ This package contains backend files of adpi-utils to control ADPi with IIO.
+
 Package: sleepi2-monitor
-Version: 1.0.3
+Version: 1.1.0
 Architecture: all
 Maintainer: Masahiro Honda <honda@mechatrax.com>
 Installed-Size: 26
@@ -24,11 +44,11 @@ Depends: init-system-helpers (>= 1.18~), sleepi2-utils, python3-sleepi, python3,
 Homepage: https://www.mechatrax.com/
 Priority: optional
 Section: misc
-Filename: pool/contrib/s/sleepi2-monitor/sleepi2-monitor_1.0.3_all.deb
-Size: 4368
-SHA256: 87ddfb0eaefcb73a06111c7d0e59e14a29838a871e1fa860815fc55d2bb3d57e
-SHA1: c8e0c85338e20d20fb5e50ae780f59f49de128cb
-MD5sum: 1029fe6cc105ca98ea6587059cabbe8a
+Filename: pool/contrib/s/sleepi2-monitor/sleepi2-monitor_1.1.0_all.deb
+Size: 4566
+SHA256: ce00d9bdc251740c64e942e1ec9e1bfcacf20ed19158063e1e757052715af329
+SHA1: d18deba3743e6608db26f8760b4775d9fe279114
+MD5sum: 6bb622676e95829da080408bc110c011
 Description: Monitoring daemon for slee-Pi 2
  This package contains the daemon to monitor slee-Pi 2.
 
