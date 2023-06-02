@@ -1,0 +1,18 @@
+Package: mechatrax-archive-keyring
+Version: 2023.06.01+nmu1
+Architecture: all
+Maintainer: Yuta Kiyonaga <kiyonaga@mechatrax.com>
+Installed-Size: 13
+Depends: gnupg
+Homepage: https://mechatrax.com/
+Priority: optional
+Section: misc
+Filename: pool/main/m/mechatrax-archive-keyring/mechatrax-archive-keyring_2023.06.01+nmu1_all.deb
+Size: 5324
+SHA256: 0ff0500c9c6e1bec3489221efd1a2cf9534f79188300571c755c126d2bb72945
+SHA1: 62f41fe2fc047a1e96f2afb8495c881ded3918c0
+MD5sum: 30f003581ac3092066b88e37423efaa1
+Description: GnuPG archive keys of the mechatrax archive
+ The mechatrax archive digitally signs its Release files.
+ This package contains the archive keys used for that.
+
