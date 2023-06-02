@@ -55,61 +55,61 @@ Description: Utilities for 3GPi family
  Dummy package for upgrade.
 
 Package: 4gpi-net-mods
-Version: 1.0.1
+Version: 1.5.0~buster1
 Architecture: all
 Maintainer: Masahiro Honda <honda@mechatrax.com>
-Installed-Size: 17
+Installed-Size: 24
 Depends: raspi-config (>= 20160527)
 Homepage: https://www.mechatrax.com/
 Priority: optional
 Section: net
-Filename: pool/main/4/4gpi-net-mods/4gpi-net-mods_1.0.1_all.deb
-Size: 2460
-SHA256: 2bca7d727d5e9f6121fa3129682a5cc64348cc2eb9aac19a8694aa4a8984de87
-SHA1: 1e576a6f645f4a3058c4640554989aff8ee80b61
-MD5sum: 0bf8c8b7c60ba8ea10d51fe0843e28ad
+Filename: pool/main/4/4gpi-net-mods/4gpi-net-mods_1.5.0~buster1_all.deb
+Size: 2976
+SHA256: 5c5206e81f59926dd5eff192825c3bae39dabd7d22e6e34f355c46db90fdd7b3
+SHA1: 340d9d113d69800cfe4d92d48f027f70a1e60e77
+MD5sum: 8c95ae84701eff21bb24749cfe10461d
 Description: Network configuration for 4GPi
  This package contains network configuration files for 4GPi
 
 Package: 4gpi-networkmanager
-Version: 2.0.0
+Version: 3.0.0
 Architecture: all
 Maintainer: Masahiro Honda <honda@mechatrax.com>
-Installed-Size: 34
+Installed-Size: 39
 Depends: python3, python3-gi, python3-dbus, network-manager (>= 1.14), modemmanager (>= 1.10), raspberrypi-kernel (>= 1.20180910-1) | raspberrypi-kernel-mtx (>= 1.20180910-1), 4gpi-utils
 Conflicts: 4gpi-networkmanager
 Homepage: https://www.mechatrax.com/
 Priority: optional
 Section: net
-Filename: pool/main/4/4gpi-networkmanager/4gpi-networkmanager_2.0.0_all.deb
-Size: 5972
-SHA256: 312376753b12f386bf7619d9b35d01f761f79cc002c568729d19054c81121178
-SHA1: ac6bce62fdb001ad76fb05e8acc2f9a269b84726
-MD5sum: 0ecc79ab44938cd0f67006e9d43498c8
+Filename: pool/main/4/4gpi-networkmanager/4gpi-networkmanager_3.0.0_all.deb
+Size: 7164
+SHA256: 3d55f5c4c47e3af5f413d13a2899d92edf0a50c23aef5531cfc24c3bb3d54e9a
+SHA1: 7fcc51a855f42bcb1463fb49f16c7224238e8770
+MD5sum: 8c6dc4acd1227f9a91c895ab4300abda
 Description: NetworkManager settings and helper tools for 4GPi
  This package contains udev rules and helper tools for using 4GPi with
  NetworkManager.
 
 Package: 4gpi-utils
-Version: 1.1.0
+Version: 3.1.0
 Architecture: all
 Maintainer: Masahiro Honda <honda@mechatrax.com>
-Installed-Size: 43
-Depends: ppp
+Installed-Size: 41
+Depends: ppp, gpiod
 Suggests: 4gpi-net-mods
 Homepage: https://www.mechatrax.com/
 Priority: optional
 Section: net
-Filename: pool/main/4/4gpi-utils/4gpi-utils_1.1.0_all.deb
-Size: 6448
-SHA256: 25ad8ce979afb519e44a43822bfdee3afbf1e022cc8714d17ad40ee806b0126e
-SHA1: 8918d93d130e574c49cd00fae09c744d7defad00
-MD5sum: 663227469894003f3d98b6be6a309df2
+Filename: pool/main/4/4gpi-utils/4gpi-utils_3.1.0_all.deb
+Size: 6604
+SHA256: 77d970bf6b33521d447c0142dd44b0efb69c36ec82c12befd9a852f9a49f710c
+SHA1: e0b39e22e9b029c15164eab535ee9d5ef6eabacc
+MD5sum: f63760db0edaa13ae98338fae2276909
 Description: Utilities for 4GPi family
  This package contains command line utilities to control 4GPi family.
 
 Package: adpi-firmware
-Version: 1.2.1
+Version: 1.4.0~buster1
 Architecture: armhf
 Maintainer: Masahiro Honda <honda@mechatrax.com>
 Installed-Size: 22
@@ -117,11 +117,11 @@ Depends: raspberrypi-kernel-mtx (>= 1.20180327-1~mtx1)
 Homepage: https://mechatrax.com/
 Priority: optional
 Section: kernel
-Filename: pool/main/a/adpi-firmware/adpi-firmware_1.2.1_armhf.deb
-Size: 3896
-SHA256: a2f77007fc76e7e992144781ab9120e33dc733c0b8f412f46c40c427fa57e095
-SHA1: 20ea2509c724e5094b0879c2ddf8c6998d842033
-MD5sum: e2124d2e53560da4f7a9b911ecc24765
+Filename: pool/main/a/adpi-firmware/adpi-firmware_1.4.0~buster1_armhf.deb
+Size: 3912
+SHA256: c731fc032e8fb7314c007c4a697297ee3af9b2f977e1cc9dad2a723aff54873f
+SHA1: 02c5329ccf702b4d673660afa81dd3d45216b7ec
+MD5sum: 49bc2672754d8a10a31b729af31de836
 Description: Device tree overlay binary for ADPi
  This package contains the device tree overlay binary for ADPi.
 
@@ -220,19 +220,19 @@ Description: Python module for ADPi family.
  This package installs the library for Python 2.
 
 Package: python-sleepi
-Version: 1.0.3
+Version: 1.1.0.1
 Architecture: all
 Maintainer: Masahiro Honda <honda@mechatrax.com>
-Installed-Size: 27
+Installed-Size: 29
 Depends: python:any (<< 2.8), python:any (>= 2.7~), python-smbus
 Homepage: https://www.mechatrax.com/
 Priority: optional
 Section: python
-Filename: pool/main/p/python-sleepi/python-sleepi_1.0.3_all.deb
-Size: 4192
-SHA256: bbddb0b684fc101dbc90fd45a30aeac90f13771823abdeb7276002909bd6447e
-SHA1: 4fef3d3864770d1c6c50b47eda58ec2f71687cc1
-MD5sum: 2e4d522c10869875a2f13566dfbc3331
+Filename: pool/main/p/python-sleepi/python-sleepi_1.1.0.1_all.deb
+Size: 4372
+SHA256: 03bfa1dae7cf1550dc4554165cb414ba5dc7b15a4dcfbba721f3d12abff939eb
+SHA1: 905e2a1a6fde8d0dd932ebd1dd3e73f8009aaa51
+MD5sum: 6fc0e0d9edd2670de0712f09ee54d753
 Description: Python module for slee-Pi family.
  This package contains python module to control slee-Pi family.
  .
@@ -260,19 +260,19 @@ Description: Python 3 module for ADPi family.
 
 Package: python3-sleepi
 Source: python-sleepi
-Version: 1.0.3
+Version: 1.1.0.1
 Architecture: all
 Maintainer: Masahiro Honda <honda@mechatrax.com>
-Installed-Size: 27
+Installed-Size: 29
 Depends: python3:any, python3-smbus
 Homepage: https://www.mechatrax.com/
 Priority: optional
 Section: python
-Filename: pool/main/p/python-sleepi/python3-sleepi_1.0.3_all.deb
-Size: 4280
-SHA256: fb1af21bb8566f6ea10651e08ce7c0d382298c1a9e28feb9c30019f29a80a89c
-SHA1: 48ac36535d24e3e5d5b9432e9dafaa3e8fafd7c3
-MD5sum: 2b0a09ed13bdbcb2bcabf7b7452aec1c
+Filename: pool/main/p/python-sleepi/python3-sleepi_1.1.0.1_all.deb
+Size: 4464
+SHA256: e5f4f948744e0681bb47955b41f7c80df52e227aa54f69d2bd54137d3fed852f
+SHA1: 417d000df9febd47e1da5631159a67a3f2bd556e
+MD5sum: b6e44b4b47cf24a68c6ddedd2999b6a8
 Description: Python 3 module for slee-Pi family.
  This package contains python module to control slee-Pi family.
  .
@@ -280,21 +280,21 @@ Description: Python 3 module for slee-Pi family.
 
 Package: raspberrypi-kernel-headers-mtx
 Source: raspberrypi-firmware-mtx
-Version: 1.20190709-1~mtx1
+Version: 1:1.20220308~buster-1~mtx1
 Architecture: armhf
 Maintainer: Masahiro Honda <honda@mechatrax.com>
-Installed-Size: 159082
+Installed-Size: 232270
 Breaks: raspberrypi-kernel-headers
 Replaces: raspberrypi-kernel-headers
 Provides: linux-headers, raspberrypi-kernel-headers
 Homepage: https://github.com/raspberrypi/firmware
-Priority: extra
+Priority: optional
 Section: kernel
-Filename: pool/main/r/raspberrypi-firmware-mtx/raspberrypi-kernel-headers-mtx_1.20190709-1~mtx1_armhf.deb
-Size: 8588260
-SHA256: 435b46bc018af093b2ce1a379ff667b1c1196b1fda006703cd0a7e492e5f97de
-SHA1: 3afec04baccb39c19acb3053c646b017cc6c00d8
-MD5sum: 277749a1436dd3e6f526559bee2bc55e
+Filename: pool/main/r/raspberrypi-firmware-mtx/raspberrypi-kernel-headers-mtx_1.20220308~buster-1~mtx1_armhf.deb
+Size: 36596140
+SHA256: b3f36c6be232e4a1ab2abea85ad6e0c715fed35c3be7857f08529b36a8cbb27b
+SHA1: ed67b7bfedbbc022f4c796aec2cdb3c27a65e17b
+MD5sum: 32da6d387dd38a9528cfd4c751a7885f
 Description: Header files for the Raspberry Pi Linux kernel
  This package provides the architecture-specific kernel header files for
  the Raspberry Pi Linux kernel, generally used for building out-of-tree
@@ -302,21 +302,21 @@ Description: Header files for the Raspberry Pi Linux kernel
 
 Package: raspberrypi-kernel-mtx
 Source: raspberrypi-firmware-mtx
-Version: 1.20190709-1~mtx1
+Version: 1:1.20220308~buster-1~mtx1
 Architecture: armhf
 Maintainer: Masahiro Honda <honda@mechatrax.com>
-Installed-Size: 184413
+Installed-Size: 297142
 Breaks: raspberrypi-bootloader (<< 1.20160324-1), raspberrypi-kernel
 Replaces: raspberrypi-bootloader (<< 1.20160324-1), raspberrypi-kernel
-Provides: linux-image, raspberrypi-kernel
+Provides: linux-image, raspberrypi-kernel (= 1:1.20220308~buster-1), wireguard-modules (= 1.0.0)
 Homepage: https://github.com/raspberrypi/firmware
-Priority: extra
+Priority: optional
 Section: kernel
-Filename: pool/main/r/raspberrypi-firmware-mtx/raspberrypi-kernel-mtx_1.20190709-1~mtx1_armhf.deb
-Size: 37648328
-SHA256: 99397975be03df2bf41296602f179641f0d1bd7be3e6275322d58eaffb43b338
-SHA1: dcd37805ac7f67e85967f2e4017dc9336cd20a16
-MD5sum: d563230bd72e1263fde526db62644a47
+Filename: pool/main/r/raspberrypi-firmware-mtx/raspberrypi-kernel-mtx_1.20220308~buster-1~mtx1_armhf.deb
+Size: 78356868
+SHA256: 9a762555c545a5e35e6e106ea53cc60c275350cc5ee93d5dc515a1132f0cb3b4
+SHA1: 917aca45ef7dfddc4ab5fb6d7426e7130f13fe94
+MD5sum: 4b68fb2322e14268bbfe154767e46ae0
 Description: Raspberry Pi bootloader
  This package contains the Raspberry Pi Linux kernel.
 
@@ -356,7 +356,7 @@ Description: Monitoring daemon for slee-Pi 2
  This package contains the daemon to monitor slee-Pi 2.
 
 Package: sleepi2-utils
-Version: 1.1.1
+Version: 1.1.2
 Architecture: all
 Maintainer: Masahiro Honda <honda@mechatrax.com>
 Installed-Size: 58
@@ -365,25 +365,78 @@ Conflicts: fake-hwclock, sleepi-utils
 Homepage: https://www.mechatrax.com/
 Priority: optional
 Section: admin
-Filename: pool/main/s/sleepi2-utils/sleepi2-utils_1.1.1_all.deb
-Size: 7984
-SHA256: 1c39c4c8b244574753240c81209bd57c3f81eff6da826b32309d7834b2f4d111
-SHA1: 020c9420a307e6c575b620c6882c799a09d7c04e
-MD5sum: a83c8b8f7f77e858993901320e949977
+Filename: pool/main/s/sleepi2-utils/sleepi2-utils_1.1.2_all.deb
+Size: 8072
+SHA256: 6600b4617fb7236120b4f6a76f1d9e0b425b3ed8f12c9a15434056cffd2167ea
+SHA1: 5cd1c325668024779e34741fe3b118bd52f94471
+MD5sum: 4a763c26acc6a14d365681c430caa61c
 Description: Utilities for slee-Pi 2
  This package contains command utilities to control slee-Pi 2.
 
+Package: sleepi3-firmware
+Version: 1.0.0
+Architecture: armhf
+Maintainer: Masahiro Honda <honda@mechatrax.com>
+Installed-Size: 17
+Depends: libraspberrypi-bin (>= 1.20160506-1), raspberrypi-bootloader (>= 1.20150506-1), raspi-config (>= 20150506)
+Conflicts: sleepi-firmware, sleepi2-firmware
+Homepage: https://www.mechatrax.com/
+Priority: optional
+Section: kernel
+Filename: pool/main/s/sleepi3-firmware/sleepi3-firmware_1.0.0_armhf.deb
+Size: 3384
+SHA256: 50cfbd1f66b0d8a9836282de5b66f783132c6c4c3e34746ed3f5d260622bc7e5
+SHA1: 0be40cfa42c150247f747411ad4cc8b573d33a4c
+MD5sum: 49d7afed96f63ef59db8f6338a7f79d3
+Description: Device tree overlay binary for slee-Pi 3
+ This package contains the device tree overlay binary for slee-Pi 3.
+
+Package: sleepi3-monitor
+Version: 2.1.0~buster1
+Architecture: all
+Maintainer: Masahiro Honda <honda@mechatrax.com>
+Installed-Size: 43
+Depends: sleepi3-utils, python3-sleepi, python3-yaml, python3, systemd
+Homepage: https://mechatrax.com/
+Priority: optional
+Section: misc
+Filename: pool/main/s/sleepi3-monitor/sleepi3-monitor_2.1.0~buster1_all.deb
+Size: 5800
+SHA256: 568c74af9642bdd74fb3eab87a0f9d269446eb8e5225e3e1450edabfeb786fcf
+SHA1: 8f8932f8c176bacfb8107d9420fcd18b2eb9bafa
+MD5sum: d27b77e2a025f9bf37357e78721274b2
+Description: Monitoring daemon for slee-Pi 3
+ This package contains the daemon to monitor slee-Pi 3.
+
+Package: sleepi3-utils
+Version: 1.0.2+git20220201.efb4eea
+Architecture: all
+Maintainer: Masahiro Honda <honda@mechatrax.com>
+Installed-Size: 60
+Depends: sleepi3-firmware, python3-sleepi (>= 1.1.0), python3
+Conflicts: fake-hwclock, sleepi-utils, sleepi2-utils
+Homepage: https://www.mechatrax.com/
+Priority: optional
+Section: admin
+Filename: pool/main/s/sleepi3-utils/sleepi3-utils_1.0.2+git20220201.efb4eea_all.deb
+Size: 8140
+SHA256: 32acbb01fdde15c6b3261de19581f8bcad2b54167701c8b8c5f1e8627e051354
+SHA1: b052ffdcee0b7d0923d742cb979be374beaa83a2
+MD5sum: a4233405fa36e276ad8ec577b5e24fbc
+Description: Utilities for slee-Pi 3
+ This package contains command utilities to control slee-Pi 3.
+
 Package: soracom-cli
 Maintainer: Masahiro Honda <honda@mechatrax.com>
-Version: 0.4.5-1
+Version: 0.10.4-1
 Architecture: armhf
 Priority: optional
 Section: net
-Filename: pool/main/s/soracom-cli/soracom-cli_0.4.5-1_armhf.deb
-Size: 5146856
-SHA256: 9f5eb925e00886f140cfcd2cc462b72b048b4de8ab9c1b07ae1885830f05d5b7
-SHA1: 45c005ce6350165d6d2e696546660b42cb40a112
-MD5sum: 8d800769d7a4ebfc2d522064c82be572
+Filename: pool/main/s/soracom-cli/soracom-cli_0.10.4-1_armhf.deb
+Size: 5417156
+SHA256: ede6c81a63f6578a545f4485b44040d9224dd993e9142736bbda0df37e883009
+SHA1: a74f8de29a4ef3ee8670de7527c0c09b3728ac07
+MD5sum: 0f1006e69299e0eff7beb2f40e041e5b
 Description: A command line tool soracom to invoke SORACOM API
 Installed-Size: 1
 
