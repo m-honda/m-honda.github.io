@@ -1,22 +1,23 @@
-Package: sleepi-archive-keyring
-Binary: sleepi-archive-keyring
-Version: 20150424.1
+Package: sleepi-utils
+Binary: sleepi-utils
+Version: 0.1-2.1
 Maintainer: Masahiro Honda <honda@mechatrax.com>
 Build-Depends: debhelper (>= 8.0.0)
 Architecture: all
 Standards-Version: 3.9.3
 Format: 1.0
 Files:
- d21434b99f253a215c984dab0335a4e7 1144 sleepi-archive-keyring_20150424.1.dsc
- 16e71906d0a8f32d992f18a1ed8ec94d 20059 sleepi-archive-keyring_20150424.1.tar.gz
-Package-List: 
- sleepi-archive-keyring deb misc optional
+ 4497fc4d08d7d7f0acd4b8b124eb5cae 1096 sleepi-utils_0.1-2.1.dsc
+ 4b6e75dda4e5b068d9d384977b28b2c4 32295 sleepi-utils_0.1-2.1.tar.gz
+Homepage: http://www.mechatrax.com/
+Package-List:
+ sleepi-utils deb unknown extra arch=all
 Checksums-Sha1:
- d0697a88ea9687a92d0cd2d27875d0e80ab8678f 1144 sleepi-archive-keyring_20150424.1.dsc
- 0929f85ad534dafaaa6a0dd54d4f5f172b376684 20059 sleepi-archive-keyring_20150424.1.tar.gz
+ adb15264d942205ce850dd99a6751b21dd575987 1096 sleepi-utils_0.1-2.1.dsc
+ 6687ca31be779622be0ddc3fa80f5a16e00cabd3 32295 sleepi-utils_0.1-2.1.tar.gz
 Checksums-Sha256:
- 93887fd92667be1dce15237b0cebf92c3551a63e8ac520884b05b3772f59b1fa 1144 sleepi-archive-keyring_20150424.1.dsc
- 8a0f481be8fc930a7c6d0e37e7c64b7e20c07b345eaa67a4bd53d282daee7c50 20059 sleepi-archive-keyring_20150424.1.tar.gz
+ a87caa8afd2ec5ad8a7fb55251eef3ff133b54d412d59ac15b6c0c9cde23a0c8 1096 sleepi-utils_0.1-2.1.dsc
+ 1302c48de8463e8c4d89a0d0c3888431fa00759cdfbed1f2c8bfc0cb4fa61235 32295 sleepi-utils_0.1-2.1.tar.gz
 
 Package: sleepi-firmware
 Binary: sleepi-firmware
@@ -39,26 +40,25 @@ Checksums-Sha256:
  4be3190d8e17b1c6ee8483db3169f10285aed3c6da07d6318387a3d5e2e156f6 1120 sleepi-firmware_0.1-2.dsc
  37c992ba770796467d9f92e4ebe07e4f4d2b6bee6ef1e648769799b1e87c9a8c 16663 sleepi-firmware_0.1-2.tar.gz
 
-Package: sleepi-utils
-Binary: sleepi-utils
-Version: 0.1-2.1
+Package: sleepi-archive-keyring
+Binary: sleepi-archive-keyring
+Version: 20150424.1
 Maintainer: Masahiro Honda <honda@mechatrax.com>
 Build-Depends: debhelper (>= 8.0.0)
 Architecture: all
 Standards-Version: 3.9.3
 Format: 1.0
 Files:
- 4497fc4d08d7d7f0acd4b8b124eb5cae 1096 sleepi-utils_0.1-2.1.dsc
- 4b6e75dda4e5b068d9d384977b28b2c4 32295 sleepi-utils_0.1-2.1.tar.gz
-Homepage: http://www.mechatrax.com/
-Package-List:
- sleepi-utils deb unknown extra arch=all
+ d21434b99f253a215c984dab0335a4e7 1144 sleepi-archive-keyring_20150424.1.dsc
+ 16e71906d0a8f32d992f18a1ed8ec94d 20059 sleepi-archive-keyring_20150424.1.tar.gz
+Package-List: 
+ sleepi-archive-keyring deb misc optional
 Checksums-Sha1:
- adb15264d942205ce850dd99a6751b21dd575987 1096 sleepi-utils_0.1-2.1.dsc
- 6687ca31be779622be0ddc3fa80f5a16e00cabd3 32295 sleepi-utils_0.1-2.1.tar.gz
+ d0697a88ea9687a92d0cd2d27875d0e80ab8678f 1144 sleepi-archive-keyring_20150424.1.dsc
+ 0929f85ad534dafaaa6a0dd54d4f5f172b376684 20059 sleepi-archive-keyring_20150424.1.tar.gz
 Checksums-Sha256:
- a87caa8afd2ec5ad8a7fb55251eef3ff133b54d412d59ac15b6c0c9cde23a0c8 1096 sleepi-utils_0.1-2.1.dsc
- 1302c48de8463e8c4d89a0d0c3888431fa00759cdfbed1f2c8bfc0cb4fa61235 32295 sleepi-utils_0.1-2.1.tar.gz
+ 93887fd92667be1dce15237b0cebf92c3551a63e8ac520884b05b3772f59b1fa 1144 sleepi-archive-keyring_20150424.1.dsc
+ 8a0f481be8fc930a7c6d0e37e7c64b7e20c07b345eaa67a4bd53d282daee7c50 20059 sleepi-archive-keyring_20150424.1.tar.gz
 
 Package: sleepi-monitor
 Binary: sleepi-monitor

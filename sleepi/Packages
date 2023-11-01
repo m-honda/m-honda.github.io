@@ -1,19 +1,20 @@
-Package: sleepi-archive-keyring
-Priority: optional
-Section: misc
-Installed-Size: 6
+Package: sleepi-utils
+Priority: extra
+Section: unknown
+Installed-Size: 8
 Maintainer: Masahiro Honda <honda@mechatrax.com>
 Architecture: all
-Version: 20150424.1
-Filename: ./sleepi-archive-keyring_20150424.1_all.deb
-Size: 3882
-MD5sum: 7f7ba602854823ab2133b5f55d161a2f
-SHA1: 76eb03022c459b44852c60640a408017bc96c1e9
-SHA256: ee928e59e17f0eace36a3bd721f5ddb2f0c9996c1eb3d21183309a2c5b6b236d
-SHA512: 9be290f579fc85c2e18e42e484405c07e3753c9719805b35d916f1871c2f1da53b4472ca300bb637dea98543b97293203d8fd40d193e4f8777e0987370be6821
-Description: GnuPG archive keys of the slee-Pi archive
- The slee-Pi archive digitally signs its Release files.
- This package contains the archive keys used for that.
+Version: 0.1-2.1
+Depends: sleepi-firmware (>= 0.1), i2c-tools (>= 3.1.0)
+Conflicts: fake-hwclock
+Filename: ./sleepi-utils_0.1-2.1_all.deb
+Size: 4742
+MD5sum: 71c5baef5a1525b95eabf27d61992823
+SHA1: e22ca43430e4b2987e79d4c87781490f61e102a2
+SHA256: 7504bbaf258fb1f446ff8b4633a600d64d7011ec40808a937fa2e88f422098c7
+SHA512: c906113eda317e0e1d34e287dbff3a5bbc25341eeff7322fcdcca25ac6f218519d1b5871732c30e137151bf0ae7f1b95595607bbf6367eec9311dad284feae32
+Description: Utilities for slee-Pi
+Homepage: http://www.mechatrax.com/
 
 Package: sleepi-firmware
 Priority: extra
@@ -32,23 +33,22 @@ SHA512: cdaffaa6c25581d7b2f188817841efa9b1eb6caf8793a3b40f0614322c27c5a9be07fe74
 Description: Devicetree overlay binary for slee-Pi
 Homepage: http://www.mechatrax.com/
 
-Package: sleepi-utils
-Priority: extra
-Section: unknown
-Installed-Size: 8
+Package: sleepi-archive-keyring
+Priority: optional
+Section: misc
+Installed-Size: 6
 Maintainer: Masahiro Honda <honda@mechatrax.com>
 Architecture: all
-Version: 0.1-2.1
-Depends: sleepi-firmware (>= 0.1), i2c-tools (>= 3.1.0)
-Conflicts: fake-hwclock
-Filename: ./sleepi-utils_0.1-2.1_all.deb
-Size: 4742
-MD5sum: 71c5baef5a1525b95eabf27d61992823
-SHA1: e22ca43430e4b2987e79d4c87781490f61e102a2
-SHA256: 7504bbaf258fb1f446ff8b4633a600d64d7011ec40808a937fa2e88f422098c7
-SHA512: c906113eda317e0e1d34e287dbff3a5bbc25341eeff7322fcdcca25ac6f218519d1b5871732c30e137151bf0ae7f1b95595607bbf6367eec9311dad284feae32
-Description: Utilities for slee-Pi
-Homepage: http://www.mechatrax.com/
+Version: 20150424.1
+Filename: ./sleepi-archive-keyring_20150424.1_all.deb
+Size: 3882
+MD5sum: 7f7ba602854823ab2133b5f55d161a2f
+SHA1: 76eb03022c459b44852c60640a408017bc96c1e9
+SHA256: ee928e59e17f0eace36a3bd721f5ddb2f0c9996c1eb3d21183309a2c5b6b236d
+SHA512: 9be290f579fc85c2e18e42e484405c07e3753c9719805b35d916f1871c2f1da53b4472ca300bb637dea98543b97293203d8fd40d193e4f8777e0987370be6821
+Description: GnuPG archive keys of the slee-Pi archive
+ The slee-Pi archive digitally signs its Release files.
+ This package contains the archive keys used for that.
 
 Package: sleepi-monitor
 Priority: extra
