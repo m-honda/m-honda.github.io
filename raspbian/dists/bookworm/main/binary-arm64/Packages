@@ -52,20 +52,39 @@ MD5sum: 8291b3d629efc95e8303e46559b3e840
 Description: Utilities for 4GPi family
  This package contains command line utilities to control 4GPi family.
 
-Package: adpi-firmware
-Version: 2.0.0.1
+Package: adpi-dkms
+Version: 1.0.0
 Architecture: arm64
 Maintainer: Yuta Kiyonaga <kiyonaga@mechatrax.com>
-Installed-Size: 22
-Depends: raspberrypi-kernel-mtx (>= 1.20230405-1~mtx1)
+Installed-Size: 32
+Depends: dkms, xz-utils, linux-source, linux-headers-rpi-dummy | linux-headers-rpi-v8 | linux-headers-rpi-2712
+Conflicts: linux-headers-arm64, linux-headers-armmp, linux-headers-armmp-lpae
+Homepage: https://mechatrax.com
+Priority: optional
+Section: kernel
+Filename: pool/main/a/adpi-dkms/adpi-dkms_1.0.0_arm64.deb
+Size: 6208
+SHA256: 6d766b3b0a120f99f46058ed15127b0429c0baac5822dcf4a486722b35be6bc7
+SHA1: 77d00d73803be8d40fb7b9724991909ec2ef4dc0
+MD5sum: de1a0e6ad34dd29885d0b9307538af5a
+Description: Patches for Linux kernel module to use ADPi (DKMS)
+ This package contains the patches for adc kernel modules. The iio and adc
+ kernel modules for using ADPi to be built with dkms.
+
+Package: adpi-firmware
+Version: 3.0.0
+Architecture: arm64
+Maintainer: Yuta Kiyonaga <kiyonaga@mechatrax.com>
+Installed-Size: 23
+Depends: adpi-dkms, mechatrax-firmware-dummy | raspi-firmware, linux-image-rpi-dummy | linux-image-rpi-v8 | linux-image-rpi-2712
 Homepage: https://mechatrax.com/
 Priority: optional
 Section: kernel
-Filename: pool/main/a/adpi-firmware/adpi-firmware_2.0.0.1_arm64.deb
-Size: 4088
-SHA256: 9aaca5fbef23bdf9a465b3b03c490db7fea3d911329e08c17cde035fa0369085
-SHA1: 1ed103a5b7618ecf484ed9946e7e8cbd87a5d8eb
-MD5sum: e6b4a87834959e858dc762f6e4bff7b5
+Filename: pool/main/a/adpi-firmware/adpi-firmware_3.0.0_arm64.deb
+Size: 4156
+SHA256: d78bcd19a59c3bb1080539c2b6ff6c6d9d4e45b2b0ac04ff924ceca0cbde132f
+SHA1: 466d11f0cac4bb784618b1954cd1a04689db05c0
+MD5sum: a0a614e67a3980b5f29633577934491d
 Description: Device tree overlay binary for ADPi
  This package contains the device tree overlay binary for ADPi.
 
@@ -87,22 +106,22 @@ Description: Utilities for ADPi
  This package contains command utilities to control ADPi.
 
 Package: adpi-utils-backend-iio
-Version: 1.0.4
+Version: 1.0.4.1
 Architecture: all
 Maintainer: Yuta Kiyonaga <kiyonaga@mechatrax.com>
 Installed-Size: 30
-Depends: bc, adpi-firmware, raspberrypi-kernel-mtx
+Depends: bc, adpi-firmware
 Conflicts: adpi-utils-backend
 Replaces: adpi-utils-backend
 Provides: adpi-utils-backend
 Homepage: https://mechatrax.com/
 Priority: optional
 Section: misc
-Filename: pool/main/a/adpi-utils-backend-iio/adpi-utils-backend-iio_1.0.4_all.deb
-Size: 5080
-SHA256: 83ccfe5d744aff3a28bf2b4f2435015fa384f2ed82ea92987eaec76d84bb5a59
-SHA1: 02996ce65e55569e9134b6c85f7fb980702011f4
-MD5sum: dcf21a8b28503b218de033643eb29dd9
+Filename: pool/main/a/adpi-utils-backend-iio/adpi-utils-backend-iio_1.0.4.1_all.deb
+Size: 5110
+SHA256: 3e4fead9e2e12f956ac9a0b91211db436ce94653cdf632a07a29272d2ba37147
+SHA1: a21fd626fd0707b53f5ba925c3b55baea67f2565
+MD5sum: 3f1941ef0afedb5034c47bcb62eb7ca7
 Description: Backend of adpi-utils to control ADPi with IIO
  This package contains backend files of adpi-utils to control ADPi with IIO.
 
@@ -126,6 +145,46 @@ MD5sum: d320645c3a86b18d549e5e7e4fc0260b
 Description: Backend of adpi-utils to control ADPi with SPI
  This package contains backend files of adpi-utils to control ADPi with SPI.
 
+Package: linux-headers-rpi-dummy
+Source: linux-rpi-dummy
+Version: 0~20231030~mtx1
+Architecture: arm64
+Maintainer: Yuta Kiyonaga <kiyonaga@mechatrax.com>
+Installed-Size: 9
+Depends: linux-headers-rpi-v8, linux-headers-rpi-2712
+Conflicts: raspberrypi-kernel-headers, raspberrypi-kernel-headers-mtx
+Provides: raspberrypi-kernel-headers, raspberrypi-kernel-headers-mtx
+Homepage: https://mechatrax.com/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-rpi-dummy/linux-headers-rpi-dummy_0~20231030~mtx1_arm64.deb
+Size: 2012
+SHA256: 3382427c8a4859b26f5ddc6686b661028de37812c66d74a6f8f3e5065a55fd00
+SHA1: 4070c58d558c773b7d7a76026663bc46ab6d481d
+MD5sum: edf432f3a8c5463a7b415824344571b7
+Description: transitional dummy package
+ This is a transitional dummy package for Raspberry Pi kernel headers.
+
+Package: linux-image-rpi-dummy
+Source: linux-rpi-dummy
+Version: 0~20231030~mtx1
+Architecture: arm64
+Maintainer: Yuta Kiyonaga <kiyonaga@mechatrax.com>
+Installed-Size: 9
+Depends: linux-image-rpi-v8, linux-image-rpi-2712
+Conflicts: raspberrypi-kernel, raspberrypi-kernel-mtx
+Provides: raspberrypi-kernel, raspberrypi-kernel-mtx
+Homepage: https://mechatrax.com/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-rpi-dummy/linux-image-rpi-dummy_0~20231030~mtx1_arm64.deb
+Size: 2000
+SHA256: dc52b890fc6480354493495387b39d84a6031b76ed51e2fa3ae5ac9040ced975
+SHA1: 521352a7b17d1f1d8d7fbd52e9bda8399f61b380
+MD5sum: 33c1b229f1bb766a4bf633f1ef9860ce
+Description: transitional dummy package
+ This is a transitional dummy package for Raspberry Pi kernel.
+
 Package: mechatrax-archive-keyring
 Version: 2023.06.01
 Architecture: all
@@ -143,6 +202,44 @@ MD5sum: 2b9347ddc74b2e99d03da3326ddca210
 Description: GnuPG archive keys of the mechatrax archive
  The mechatrax archive digitally signs its Release files.
  This package contains the archive keys used for that.
+
+Package: mechatrax-firmware-dummy
+Source: mechatrax-firmware-migration-helper
+Version: 1.0.0
+Architecture: all
+Maintainer: Yuta Kiyonaga <kiyonaga@mechatrax.com>
+Installed-Size: 9
+Pre-Depends: mechatrax-firmware-migration-helper
+Depends: raspi-firmware
+Conflicts: raspberrypi-bootloader
+Provides: raspberrypi-bootloader
+Homepage: https://mechatrax.com/
+Priority: optional
+Section: misc
+Filename: pool/main/m/mechatrax-firmware-migration-helper/mechatrax-firmware-dummy_1.0.0_all.deb
+Size: 1866
+SHA256: 1e89700bb514efd08905c02e4e810ed06067565c978f42dc63cd53ef80174f66
+SHA1: 218371610be326c11a2a0e94114818016d1bf4b6
+MD5sum: 16dfbe756a2315ec5decde487b41bd9f
+Description: transitional dummy package
+ This is a transitional dummy package for Raspberry Pi firmware.
+
+Package: mechatrax-firmware-migration-helper
+Version: 1.0.0
+Architecture: all
+Maintainer: Yuta Kiyonaga <kiyonaga@mechatrax.com>
+Installed-Size: 11
+Homepage: https://mechatrax.com/
+Priority: optional
+Section: misc
+Filename: pool/main/m/mechatrax-firmware-migration-helper/mechatrax-firmware-migration-helper_1.0.0_all.deb
+Size: 2360
+SHA256: 4abe3b5cc30dac75475eba5df48b0ed0af7810b66f07034c6772ffc16756e005
+SHA1: 864d728b20851fd0fd53aeb865c637fcdb95c1f1
+MD5sum: 6e9f4a22c0f92a812c00b0245b6d3df6
+Description: firmware migration helper package for MechaTracks products
+ This package contains scripts to migrate firmware packages for MechaTracks
+ products.
 
 Package: python3-adpi
 Source: python-adpi
@@ -185,20 +282,20 @@ Description: Python 3 module for slee-Pi family.
  This package installs the library for Python 3.
 
 Package: sleepi3-firmware
-Version: 1.0.1.2
+Version: 2.0.0
 Architecture: arm64
 Maintainer: Yuta Kiyonaga <kiyonaga@mechatrax.com>
-Installed-Size: 17
-Depends: libraspberrypi-bin (>= 1.20160506-1), raspberrypi-bootloader (>= 1.20160506-1), raspi-config (>= 20160506)
+Installed-Size: 18
+Depends: raspi-config (>= 20160506), mechatrax-firmware-dummy | raspi-firmware, linux-image-rpi-dummy | linux-image-rpi-v8 | linux-image-rpi-2712
 Conflicts: sleepi-firmware, sleepi2-firmware
 Homepage: https://mechatrax.com/
 Priority: optional
 Section: kernel
-Filename: pool/main/s/sleepi3-firmware/sleepi3-firmware_1.0.1.2_arm64.deb
-Size: 3628
-SHA256: f513bcdbec68342dbfa6e28f2780fa42f71386ee9425109d146a18ddea8e1c78
-SHA1: e07353fc2096e78f7bcca87fedaffaf524e2b90e
-MD5sum: 2879d35dc6f21a9eae10cf73befa8a0a
+Filename: pool/main/s/sleepi3-firmware/sleepi3-firmware_2.0.0_arm64.deb
+Size: 3704
+SHA256: 8c43ad714789a598b383d062cd501cac08f20bbb74ce44f26329f11ef1589b0a
+SHA1: 4fd144a20f5cfdf0a1790c287ca4126e758e04e8
+MD5sum: 81ed2fc05526d9209e38cee3f5dc2ea1
 Description: Device tree overlay binary for slee-Pi 3
  This package contains the device tree overlay binary for slee-Pi 3.
 
